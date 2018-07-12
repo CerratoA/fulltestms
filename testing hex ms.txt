@@ -1,0 +1,107 @@
+
+//utxos fro ms
+{
+   "totalItems":1,
+   "from":0,
+   "to":1,
+   "items":[
+      {
+         "txid":"575deac55bfb0eb0968f15b519c5e0e32fcae506bb962d0595c21dc00dae01a9",
+         "version":2,
+         "locktime":1352883,
+         "vin":[
+            {
+               "txid":"bfbc625b03303a305f071deac3e1ab3a633acc46ef1d6590c0f27485d85656a5",
+               "vout":1,
+               "sequence":4294967294,
+               "n":0,
+               "scriptSig":{
+                  "hex":"4830450221008c4cdf8c7e989c57f0b0f7a943e039b13d82fe62629b53ff7c4446688891091d02206f4856eabec47bb9586720ca977ea91f0cb3c550bc7ba9584d433e45e554719a01210395727e4f82bdd56344aa6e66db5648d7464c05b8e64379dda8c508cecfda568b",
+                  "asm":"30450221008c4cdf8c7e989c57f0b0f7a943e039b13d82fe62629b53ff7c4446688891091d02206f4856eabec47bb9586720ca977ea91f0cb3c550bc7ba9584d433e45e554719a[ALL] 0395727e4f82bdd56344aa6e66db5648d7464c05b8e64379dda8c508cecfda568b"
+               },
+               "addr":"n3CS64canfkeg37YgnsN5PH1MDPuc4u61r",
+               "valueSat":278958796007,
+               "value":2789.58796007,
+               "doubleSpentTxID":null
+            }
+         ],
+         "vout":[
+            {
+               "value":"0.70506635",
+               "n":0,
+               "scriptPubKey":{
+                  "hex":"a914827aad81269ef45bdfdab57e1b04493f99fd539587",
+                  "asm":"OP_HASH160 827aad81269ef45bdfdab57e1b04493f99fd5395 OP_EQUAL",
+                  "addresses":[
+                     "2N598o2Cj5Jt8mPW5PHdYykzcGkdvHkSepx"
+                  ],
+                  "type":"scripthash"
+               },
+               "spentTxId":null,
+               "spentIndex":null,
+               "spentHeight":null
+            },
+            {
+               "value":"2788.88177372",
+               "n":1,
+               "scriptPubKey":{
+                  "hex":"76a91483d6a9404d03e7c55392008c8648fc2a9407001688ac",
+                  "asm":"OP_DUP OP_HASH160 83d6a9404d03e7c55392008c8648fc2a94070016 OP_EQUALVERIFY OP_CHECKSIG",
+                  "addresses":[
+                     "msY3y6pPCsSEWhueYv2oWduYDMYjPvqyHY"
+                  ],
+                  "type":"pubkeyhash"
+               },
+               "spentTxId":null,
+               "spentIndex":null,
+               "spentHeight":null
+            }
+         ],
+         "blockheight":-1,
+         "confirmations":0,
+         "time":1531284478,
+         "valueOut":2789.58684007,
+         "size":224,
+         "valueIn":2789.58796007,
+         "fees":0.00112
+      }
+   ]
+}
+
+//tx to sign and spent
+// first sign
+0100000001a901ae0dc01dc295052d96bb06e5ca2fe3e0c519b5158f96b00efb5bc5ea5d5700000000b400473044022036e99d43112af52e9c0a575d1b54aa99727e7c2960707c365a821c65ee60680c02205bc20c01e80b98303b794de0f48c1a5afc5fe86abc1691b4f4b030be6a53abdc014c69522102827ec40a1403bd02188f5196d9e0e9f82c7b8319472a54f11e51d0b3aebbb07d21036c30b3cd779094b765ed8e3e5b2efb31289517cf563539a78688ac1cfffa3e5d2103eb0aaf2049d734c96a98e4045fb14b526124c3d4c938e4626455d46ea02365da53aeffffffff014b8de703000000001976a9147f73f34c37e8ec855010f997849a1937b501095488ac00000000
+
+//second sign
+
+//objt from hex
+{ hash: '15222e57deed80b494b115f36565b5581bcc9d0437e6be63e037dbb6685794bd',
+  version: 1,
+  inputs: 
+   [ { prevTxId: '575deac55bfb0eb0968f15b519c5e0e32fcae506bb962d0595c21dc00dae01a9',
+       outputIndex: 0,
+       sequenceNumber: 4294967295,
+       script: '00473044022036e99d43112af52e9c0a575d1b54aa99727e7c2960707c365a821c65ee60680c02205bc20c01e80b98303b794de0f48c1a5afc5fe86abc1691b4f4b030be6a53abdc014c69522102827ec40a1403bd02188f5196d9e0e9f82c7b8319472a54f11e51d0b3aebbb07d21036c30b3cd779094b765ed8e3e5b2efb31289517cf563539a78688ac1cfffa3e5d2103eb0aaf2049d734c96a98e4045fb14b526124c3d4c938e4626455d46ea02365da53ae',
+       scriptString: 'OP_0 71 0x3044022036e99d43112af52e9c0a575d1b54aa99727e7c2960707c365a821c65ee60680c02205bc20c01e80b98303b794de0f48c1a5afc5fe86abc1691b4f4b030be6a53abdc01 OP_PUSHDATA1 105 0x522102827ec40a1403bd02188f5196d9e0e9f82c7b8319472a54f11e51d0b3aebbb07d21036c30b3cd779094b765ed8e3e5b2efb31289517cf563539a78688ac1cfffa3e5d2103eb0aaf2049d734c96a98e4045fb14b526124c3d4c938e4626455d46ea02365da53ae',
+       output: [Object],
+       threshold: 2,
+       publicKeys: [Array],
+       signatures: [Array] } ],
+  outputs: 
+   [ { satoshis: 65506635,
+       script: '76a9147f73f34c37e8ec855010f997849a1937b501095488ac' } ],
+  nLockTime: 0 }
+
+  //tx from hex
+  { hash: '15222e57deed80b494b115f36565b5581bcc9d0437e6be63e037dbb6685794bd',
+  version: 1,
+  inputs: 
+   [ { prevTxId: '575deac55bfb0eb0968f15b519c5e0e32fcae506bb962d0595c21dc00dae01a9',
+       outputIndex: 0,
+       sequenceNumber: 4294967295,
+       script: '00473044022036e99d43112af52e9c0a575d1b54aa99727e7c2960707c365a821c65ee60680c02205bc20c01e80b98303b794de0f48c1a5afc5fe86abc1691b4f4b030be6a53abdc014c69522102827ec40a1403bd02188f5196d9e0e9f82c7b8319472a54f11e51d0b3aebbb07d21036c30b3cd779094b765ed8e3e5b2efb31289517cf563539a78688ac1cfffa3e5d2103eb0aaf2049d734c96a98e4045fb14b526124c3d4c938e4626455d46ea02365da53ae',
+       scriptString: 'OP_0 71 0x3044022036e99d43112af52e9c0a575d1b54aa99727e7c2960707c365a821c65ee60680c02205bc20c01e80b98303b794de0f48c1a5afc5fe86abc1691b4f4b030be6a53abdc01 OP_PUSHDATA1 105 0x522102827ec40a1403bd02188f5196d9e0e9f82c7b8319472a54f11e51d0b3aebbb07d21036c30b3cd779094b765ed8e3e5b2efb31289517cf563539a78688ac1cfffa3e5d2103eb0aaf2049d734c96a98e4045fb14b526124c3d4c938e4626455d46ea02365da53ae' } ],
+  outputs: 
+   [ { satoshis: 65506635,
+       script: '76a9147f73f34c37e8ec855010f997849a1937b501095488ac' } ],
+  nLockTime: 0 }

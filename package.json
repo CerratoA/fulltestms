@@ -1,0 +1,15 @@
+{
+  "name": "testms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "MultisigLibraryBTC": "git+https://github.com/CerratoA/multisig.git#library",
+    "bitcore-lib": "^0.15.0"
+  }
+}
